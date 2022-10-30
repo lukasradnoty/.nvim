@@ -6,7 +6,7 @@
     " https://github.com/tpope/vim-commentary
     " <gcc> comment/uncomment
     " <gc> comment/uncomment a motion
-    "packadd commentary
+    packadd commentary
 
     " Plugins excluded from VSCode
     if !exists('g:vscode')
