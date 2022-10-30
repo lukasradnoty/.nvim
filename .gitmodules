@@ -1,3 +1,6 @@
 [submodule "vendor/commentary"]
 	path = vendor/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "vendor/goyo"]
+	path = vendor/goyo
+	url = https://github.com/junegunn/goyo.vim

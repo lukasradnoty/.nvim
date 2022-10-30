@@ -17,7 +17,7 @@
         " :Goyo Toggle Goyo
         " :Goyo [dimension] Turn on or resize Goyo
         " :Goyo! Turn Goyo off
-        "packadd goyo
+        packadd goyo
 
         " https://github.com/junegunn/limelight.vim
         " Focus on paragraph/block
