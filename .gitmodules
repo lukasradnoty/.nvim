@@ -1,3 +1,0 @@
-[submodule "vendor/commentary"]
-	path = vendor/commentary
-	url = https://github.com/tpope/vim-commentary
