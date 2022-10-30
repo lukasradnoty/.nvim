@@ -10,7 +10,6 @@
 
     " Plugins excluded from VSCode
     if !exists('g:vscode')
-        " TODO: https://github.com/easymotion/vim-easymotion
 
         " https://github.com/junegunn/goyo.vim
         " Distraction-free writing
@@ -25,6 +24,7 @@
         " Limelight! Turn Limelight off
         " Limelight!! [0.0 ~ 1.0] Toggle Limelight
         packadd limelight
+
     endif
 
 " No config after this doesn't apply to both Neovim and VSCode
