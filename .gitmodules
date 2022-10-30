@@ -4,3 +4,6 @@
 [submodule "vendor/goyo"]
 	path = vendor/goyo
 	url = https://github.com/junegunn/goyo.vim
+[submodule "vendor/limelight"]
+	path = vendor/limelight
+	url = https://github.com/junegunn/limelight.vim

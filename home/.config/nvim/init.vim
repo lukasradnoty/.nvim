@@ -24,7 +24,7 @@
         " Limelight [0.0 ~ 1.0] Turn Limelight on
         " Limelight! Turn Limelight off
         " Limelight!! [0.0 ~ 1.0] Toggle Limelight
-        "packadd limelight
+        packadd limelight
     endif
 
 " No config after this doesn't apply to both Neovim and VSCode
