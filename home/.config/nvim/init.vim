@@ -71,6 +71,12 @@ set mouse=a
     " Exit terminal by hitting Esc twice
     tnoremap <Esc><Esc> <C-\><C-n>
 
+    " No line numbers in terminal
+	autocmd TermOpen term://* set nonumber norelativenumber
+
+    " Open straight into insert mode
+	autocmd TermOpen term://* startinsert
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlighting the current line
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
