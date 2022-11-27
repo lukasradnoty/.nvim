@@ -7,3 +7,7 @@
 [submodule "vendor/limelight"]
 	path = vendor/limelight
 	url = https://github.com/junegunn/limelight.vim
+[submodule "vendor/coc"]
+	path = vendor/coc
+	url = https://github.com/neoclide/coc.nvim
+	branch = release

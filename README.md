@@ -2,7 +2,6 @@
 
 - <https://github.com/preservim/nerdtree>
 - <https://github.com/ryanoasis/vim-devicons>
-- coc
 - easymotion
 - <https://github.com/tiagofumo/vim-nerdtree-syntax-highlight>
 - <https://github.com/chriskempson/base16-vim>
