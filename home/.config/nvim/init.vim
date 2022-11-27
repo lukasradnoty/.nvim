@@ -1,6 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins from ~/.local/share/nvim/site/pack/vendor/opt
-" (the opt is a symlink to ~/homesick/repos/nvim/vendor).
+" (the opt is a symlink to ~/.homesick/repos/nvim/vendor).
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
     " https://github.com/tpope/vim-commentary
