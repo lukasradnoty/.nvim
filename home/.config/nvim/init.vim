@@ -27,18 +27,18 @@
 
     endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SK to US keyboard characters in normal mode.
+"
+" E.g. " is remapped to :
+
+set langmap=\";\:
+
 " No config after this doesn't apply to both Neovim and VSCode
 if exists('g:vscode')
     finish
 endif
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" SK to US keyboard characters in normal mode.
-"
-" E.g. " is remapped to :
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set langmap=\";\:
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Wrapping
