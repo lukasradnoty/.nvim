@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "coc-solargraph": ">=1.2.4",
+    "coc-json": ">=1.7.0",
+    "coc-tsserver": ">=2.1.0",
+    "coc-html": ">=1.8.0"
+  },
+  "disabled": [],
+  "locked": []
+}
