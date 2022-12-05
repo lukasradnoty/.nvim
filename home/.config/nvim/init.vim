@@ -43,9 +43,11 @@
 
 	" https://github.com/Yggdroot/indentLine
 	" Indentation lines
-	packadd indentline
+	" packadd indentline
 	" let g:indentLine_char = '|'
-	let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+	" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+	
+	" packadd indent-blankline
     endif
 
 

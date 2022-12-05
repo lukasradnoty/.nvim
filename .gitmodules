@@ -14,3 +14,6 @@
 [submodule "vendor/indentline"]
 	path = vendor/indentline
 	url = https://github.com/Yggdroot/indentLine
+[submodule "vendor/indent-blankline"]
+	path = vendor/indent-blankline
+	url = https://github.com/lukas-reineke/indent-blankline.nvim
