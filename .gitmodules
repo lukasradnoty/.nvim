@@ -11,3 +11,6 @@
 	path = vendor/coc
 	url = https://github.com/neoclide/coc.nvim
 	branch = release
+[submodule "vendor/indentline"]
+	path = vendor/indentline
+	url = https://github.com/Yggdroot/indentLine
