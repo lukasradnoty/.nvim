@@ -20,3 +20,6 @@
 [submodule "vendor/endwise"]
 	path = vendor/endwise
 	url = https://github.com/tpope/vim-endwise
+[submodule "vendor/polyglot"]
+	path = vendor/polyglot
+	url = https://github.com/sheerun/vim-polyglot

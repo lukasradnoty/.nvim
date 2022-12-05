@@ -9,9 +9,6 @@
 - <https://github.com/preservim/nerdtree>
 - <https://github.com/junegunn/fzf> <https://github.com/junegunn/fzf/blob/master/README-VIM.md>
 - <https://github.com/junegunn/fzf.vim>
-- <https://github.com/sheerun/vim-polyglot>
-- <https://github.com/mboughaba/i3config.vim>
-- <https://github.com/Yggdroot/indentLine>
 - <https://github.com/nathanaelkane/vim-indent-guides>
 - <https://github.com/ycm-core/YouCompleteMe>
 - <https://github.com/Shougo/deoplete.nvim>

@@ -10,6 +10,9 @@
 
     " Plugins excluded from VSCode
     if !exists('g:vscode')
+	" https://github.com/sheerun/vim-polyglot
+	" Language packs
+	packadd polyglot
 
         " https://github.com/junegunn/goyo.vim
         " Distraction-free writing
