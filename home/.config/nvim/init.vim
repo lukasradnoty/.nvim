@@ -48,6 +48,9 @@
 	" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 	
 	" packadd indent-blankline
+	
+	" https://github.com/tpope/vim-endwise
+	packadd endwise
     endif
 
 

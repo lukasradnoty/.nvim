@@ -17,3 +17,6 @@
 [submodule "vendor/indent-blankline"]
 	path = vendor/indent-blankline
 	url = https://github.com/lukas-reineke/indent-blankline.nvim
+[submodule "vendor/endwise"]
+	path = vendor/endwise
+	url = https://github.com/tpope/vim-endwise
