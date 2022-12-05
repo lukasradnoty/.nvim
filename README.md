@@ -24,14 +24,12 @@
 - <https://github.com/jiangmiao/auto-pairs>
 - <https://github.com/alvan/vim-closetag>
 - <https://github.com/Raimondi/delimitMate>
-- <https://github.com/tpope/vim-endwise>
 - <https://github.com/tpope/vim-surround>
 - <https://github.com/tpope/vim-ragtag>
 - <https://github.com/tpope/vim-rails>
 - <https://github.com/chrisbra/csv.vim>
 - <https://github.com/vim-ctrlspace/vim-ctrlspace>
 - <https://github.com/plainfingers/black_is_the_color>
-- <https://github.com/rakr/vim-one>
 
 ## Themes to try
 
