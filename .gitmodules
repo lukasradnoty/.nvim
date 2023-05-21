@@ -8,7 +8,7 @@
 	path = vendor/limelight
 	url = https://github.com/junegunn/limelight.vim
 [submodule "vendor/coc"]
-	path = .local/share/nvim/site/pack/vendor/coc
+	path = home/.local/share/nvim/site/pack/vendor/opt/coc
 	url = https://github.com/neoclide/coc.nvim
 	branch = release
 [submodule "vendor/indentline"]
