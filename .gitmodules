@@ -1,14 +1,14 @@
 [submodule "vendor/commentary"]
-	path = home/.local/share/nvim/site/pack/vendor/opt/commentary
+	path = home/.local/share/nvim/site/pack/tpope/opt/vim-commentary
 	url = https://github.com/tpope/vim-commentary
 [submodule "vendor/goyo"]
-	path = vendor/goyo
+	path = home/.local/share/nvim/site/pack/junegunn/opt/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
 [submodule "vendor/limelight"]
-	path = vendor/limelight
+	path = home/.local/share/nvim/site/pack/junegunn/opt/limelight.vim
 	url = https://github.com/junegunn/limelight.vim
 [submodule "vendor/coc"]
-	path = home/.local/share/nvim/site/pack/vendor/opt/coc
+	path = home/.local/share/nvim/site/pack/neoclide/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
 	branch = release
 [submodule "vendor/indentline"]
@@ -18,8 +18,8 @@
 	path = vendor/indent-blankline
 	url = https://github.com/lukas-reineke/indent-blankline.nvim
 [submodule "vendor/endwise"]
-	path = vendor/endwise
+	path = home/.local/share/nvim/site/pack/tpope/opt/vim-endwise
 	url = https://github.com/tpope/vim-endwise
 [submodule "vendor/polyglot"]
-	path = vendor/polyglot
+	path = home/.local/share/nvim/site/pack/sheerun/opt/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
