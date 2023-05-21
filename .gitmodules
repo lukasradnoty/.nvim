@@ -1,5 +1,5 @@
 [submodule "vendor/commentary"]
-	path = vendor/commentary
+	path = home/.local/share/nvim/site/pack/vendor/opt/commentary
 	url = https://github.com/tpope/vim-commentary
 [submodule "vendor/goyo"]
 	path = vendor/goyo
