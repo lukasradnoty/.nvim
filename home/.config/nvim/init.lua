@@ -2,15 +2,21 @@
     -- https://github.com/tpope/vim-commentary
     -- <gcc> comment/uncomment
     -- <gc> comment/uncomment a motion
-    vim.cmd [[packadd vim-commentary]]
+    -- vim.cmd [[packadd vim-commentary]]
 
+require('packer').startup(function(use)
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
+    
+    use 'tpope/vim-commentary'
+end)
 
 -- Config bellow this doesn't apply to VSCode
-if vim.g.vscode then
-    do
-        return
-    end
-end
+-- if vim.g.vscode then
+--     do
+--         return
+--     end
+-- end
 
 -- Line numbers
     vim.opt.number = true
