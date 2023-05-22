@@ -6,27 +6,27 @@
     " https://github.com/tpope/vim-commentary
     " <gcc> comment/uncomment
     " <gc> comment/uncomment a motion
-    packadd commentary
+    packadd vim-commentary
 
     " Plugins excluded from VSCode
     if !exists('g:vscode')
 	" https://github.com/sheerun/vim-polyglot
 	" Language packs
-	packadd polyglot
+	packadd vim-polyglot
 
         " https://github.com/junegunn/goyo.vim
         " Distraction-free writing
         " :Goyo Toggle Goyo
         " :Goyo [dimension] Turn on or resize Goyo
         " :Goyo! Turn Goyo off
-        packadd goyo
+        packadd goyo.vim
 
         " https://github.com/junegunn/limelight.vim
         " Focus on paragraph/block
         " Limelight [0.0 ~ 1.0] Turn Limelight on
         " Limelight! Turn Limelight off
         " Limelight!! [0.0 ~ 1.0] Toggle Limelight
-        packadd limelight
+        packadd limelight.vim
 	
 	" https://github.com/neoclide/coc.nvim -b release
 	packadd coc
@@ -46,14 +46,14 @@
 
 	" https://github.com/Yggdroot/indentLine
 	" Indentation lines
-	packadd indentline
+	"packadd indentline
 	" let g:indentLine_char = '|'
-	let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+	"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 	
 	" packadd indent-blankline
 	
 	" https://github.com/tpope/vim-endwise
-	packadd endwise
+	packadd vim-endwise
     endif
 
 
@@ -85,16 +85,6 @@ endif
     " Indent after a wrap
     " set breakindent
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Line numbers
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    set number
-
-    " Relative numbers for lines other than the current line
-    set relativenumber
-
-" Enable mouse in all modes
-set mouse=a
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Terminal
@@ -121,60 +111,3 @@ set mouse=a
 " Don't hightlight matching parentheses
 " (Turn on with :DoMatchParen)
 autocmd VimEnter * NoMatchParen
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Statusline
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " One fullwidth statusline independent of the number of panes
-    set laststatus=3
-
-    " Statusline contents
-    set stl=
-    " set stl+=%{fugitive#statusline()}
-    " File name
-    set stl+=%f
-    " Do we have unsaved changes (modified) [flag]
-    set stl+=%m
-    " Is this open in read only mode [flag]
-    set stl+=%r
-    " Is this open in preview mode [flag]
-    set stl+=%w
-    " Is this help buffer
-    " set stl+=%H
-    " Full path of the file
-    " set stl+=\ %F
-    " File nama tail
-    set stl+=\ %t
-    " TRUNCATE THE STATUSLINE HERE if it's too wide (BOL by default)
-    " set stl+=%<
-    " Window number
-    " set stl+=\ %{winnr()}
-    " SEPARATION POINT
-    set stl+=%=
-    " Argument list status
-    set stl+=\ %a
-    " Warning if file format is not unix
-    set stl+=%#warningmsg#
-    set stl+=%{&ff!='unix'?'['.&ff.']':''}
-    set stl+=%*
-    " Warning if file encoding is not utf-8
-    set stl+=%#warningmsg#
-    set stl+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''}
-    set stl+=%*
-    " SEPARATION POINT
-    set stl+=%=
-    " Buffer number
-    set stl+=\ Buf:%n
-    " Line %l (of %L), Col %c (alternatively %v)
-    set stl+=\ Ln:%l(of\ %L)\ Col:%c
-    " Percent of file - above the viewport
-    " set stl+=\ %P
-    " Percent of file - line
-    " set stl+=\ %p%%
-    " File format
-    " set stl+=\ %{&ff}
-    " File encoding
-    " set stl+=\ %{&fileencoding?&fileencoding:&encoding}
-    " set stl+=\ %{strlen(&fenc)?&fenc:'none'}
-    " File type (language)
-    set stl+=\ %Y
