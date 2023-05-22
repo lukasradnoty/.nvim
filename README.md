@@ -4,6 +4,7 @@
 - <https://github.com/ryanoasis/vim-devicons>
 - easymotion
 - <https://github.com/tiagofumo/vim-nerdtree-syntax-highlight>
+- <https://github.com/utilyre/barbecue.nvim>
 - <https://github.com/chriskempson/base16-vim>
 - <https://github.com/editorconfig/editorconfig-vim>
 - <https://github.com/preservim/nerdtree>
