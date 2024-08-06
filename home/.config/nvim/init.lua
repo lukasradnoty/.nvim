@@ -2,58 +2,55 @@
 -- vim.cmd [[packadd vim-commentary]]
 
 require('packer').startup(function(use)
-    -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
-    
-    -- https://github.com/tpope/vim-commentary
+    -- Comments
     -- <gcc> comment/uncomment
     -- <gc> comment/uncomment a motion
-    use 'tpope/vim-commentary'
-    
-    
-    -- https://github.com/junegunn/goyo.vim
+    use 'https://github.com/tpope/vim-commentary'
+
     -- Distraction-free writing
     -- :Goyo Toggle Goyo
     -- :Goyo [dimension] Turn on or resize Goyo
     -- :Goyo! Turn Goyo off
-	use 'junegunn/goyo.vim'
+    use { 'https://github.com/junegunn/goyo.vim',
+        cond = [[not vim.g.vscode]]
+    }
 
-    -- https://github.com/junegunn/limelight.vim
     -- Focus on paragraph/block
     -- Limelight [0.0 ~ 1.0] Turn Limelight on
     -- Limelight! Turn Limelight off
     -- Limelight!! [0.0 ~ 1.0] Toggle Limelight
-	use 'junegunn/limelight.vim'
+    use { 'https://github.com/junegunn/limelight.vim',
+        cond = [[not vim.g.vscode]]
+    }
 
-	-- https://github.com/neoclide/coc.nvim
-	use{ 'neoclide/coc.nvim', branch = 'release' }
-	-- Make <CR> to accept selected completion item or notify coc.nvim to format
-	-- <C-g>u breaks current undo, please make your own choice.
-	-- inoremap <silent><expr> <TAB>
-	--       \ coc#pum#visible() ? coc#pum#next(1) :
-	--       \ CheckBackspace() ? "\<Tab>" :
-	--       \ coc#refresh()
-	-- inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-	-- Make <CR> to accept selected completion item or notify coc.nvim to format
-	-- <C-g>u breaks current undo, please make your own choice.
-	-- inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-	-- 			      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-	-- Use <c-space> to trigger completion.
-	-- inoremap <silent><expr> <c-space> coc#refresh()
+    -- COC
+    use{ 'https://github.com/neoclide/coc.nvim', branch = 'release',
+        cond = [[not vim.g.vscode]]
+    }
 
-	-- https://github.com/Yggdroot/indentLine
-	-- Indentation lines
-	-- vim.g.indentLine_char = '|'
-	-- vim.g.indentLine_char_list = ['|', '¦', '┆', '┊']
-	-- use 'Yggdroot/indentLine'
+    -- Make <CR> to accept selected completion item or notify coc.nvim to format
+    -- <C-g>u breaks current undo, please make your own choice.
+    -- inoremap <silent><expr> <TAB>
+    --       \ coc#pum#visible() ? coc#pum#next(1) :
+    --       \ CheckBackspace() ? "\<Tab>" :
+    --       \ coc#refresh()
+    -- inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+    -- Make <CR> to accept selected completion item or notify coc.nvim to format
+    -- <C-g>u breaks current undo, please make your own choice.
+    -- inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+    -- 			      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+    -- Use <c-space> to trigger completion.
+    -- inoremap <silent><expr> <c-space> coc#refresh()
 
-    -- https://github.com/lukas-reineke/indent-blankline.nvim
     -- Indentation lines
-	use 'lukas-reineke/indent-blankline.nvim'
-    
+    use { 'https://github.com/lukas-reineke/indent-blankline.nvim',
+        cond = [[not vim.g.vscode]]
+    }
+
     -- Colorcolumn
     use {
         'https://github.com/lukas-reineke/virt-column.nvim',
+        cond = [[not vim.g.vscode]],
         config = function()
             require("virt-column").setup {
                 char = '┆', -- | ¦ ┆ ┊
@@ -64,32 +61,60 @@ require('packer').startup(function(use)
         end
     }
 
-	-- `end`s
-	use 'https://github.com/tpope/vim-endwise'
+    -- `end`s
+    use 'https://github.com/tpope/vim-endwise'
 
-	-- Language packs
-	use 'https://github.com/sheerun/vim-polyglot'
-    
+    -- Language packs
+    use { 'https://github.com/sheerun/vim-polyglot',
+        cond = [[not vim.g.vscode]]
+    }
+
+    -- File explorer
     use {
         'https://github.com/nvim-tree/nvim-tree.lua',
+        cond = [[not vim.g.vscode]],
         requires = {
-          'nvim-tree/nvim-web-devicons', -- optional
+            'https://github.com/nvim-tree/nvim-web-devicons', -- optional
         },
         config = function()
-          require("nvim-tree").setup {}
-          vim.api.nvim_set_keymap("n", "<C-[>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
+            require("nvim-tree").setup {}
+            vim.api.nvim_set_keymap("n", "<C-[>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
         end
     }
 
-    -- Theme
-    use 'https://github.com/folke/tokyonight.nvim'
+    -- Transparent backgrounds
+    -- use 'https://github.com/xiyaowong/transparent.nvim'
+
+    -- Colorscheme
+    use 'navarasu/onedark.nvim' --sway
 end)
 
--- vim.cmd[[colorscheme tokyonight]]
-vim.cmd[[colorscheme tokyonight-night]]
--- vim.cmd[[colorscheme tokyonight-storm]]
--- vim.cmd[[colorscheme tokyonight-day]]
--- vim.cmd[[colorscheme tokyonight-moon]]
+-- Onedark colorschcme for my archlinux+sway setup
+if vim.fn.hostname() == "x260-archlinux" then 
+    -- If you don't set this to dark and onedark style is of the dark group of colors,
+    -- it will default to light.
+    vim.opt.background = 'light'
+    require('onedark').setup {
+        style = 'light', -- 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
+
+        transparent = true,
+        term_colors = true,
+        ending_tildes = true,
+
+        -- toggle_style_key = '<leader>ts',
+        -- toggle_style_list = { 'light', 'dark', 'darker',  'warm', 'warmer', 'cool', 'deep' },
+    }
+    require('onedark').load()
+    -- vim.cmd[[colorscheme onedark]] -- not needed with this plugin
+end
+
+
+-- vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "ExtraGroup" })
+
+-- vim.cmd[[colorscheme default]]
+-- vim.cmd[[colorscheme flexoki-dark]]
+-- vim.opt.termguicolors = true -- not compatible with pywal! 
+-- vim.opt.termguicolors = false -- its either true by default or somethings sets it to true
 
 -- Config bellow this doesn't apply to VSCode
 -- if vim.g.vscode then
@@ -98,19 +123,17 @@ vim.cmd[[colorscheme tokyonight-night]]
 --     end
 -- end
 
-vim.opt.termguicolors = true
-
 -- Line numbers
     vim.opt.number = true
     -- Relative numbers for lines other than the current line
     vim.opt.relativenumber = true
     
 -- Line highlighting
-    vim.opt.cursorline = true
+    -- vim.opt.cursorline = true
 
     -- Toggle it in insert mode
-    vim.cmd [[autocmd InsertEnter * set nocursorline]]
-    vim.cmd [[autocmd InsertLeave * set cursorline]]
+    -- vim.cmd [[autocmd InsertEnter * set nocursorline]]
+    -- vim.cmd [[autocmd InsertLeave * set cursorline]]
     
 -- Line wrapping
 --
@@ -212,3 +235,4 @@ vim.opt.termguicolors = true
     -- even with multiple panes open
     vim.opt.laststatus = 3
     
+vim.api.nvim_set_hl(0, 'CursorLine', { underline = true }) 
