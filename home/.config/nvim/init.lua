@@ -1,4 +1,5 @@
 require 'plugins'
+require 'local' -- Local settings specific to this host/system/wm/machine. In my case tracked in a separate homeshick repo - .macos, .sway, etc.
 require 'statusline'
 
 -- Onedark colorschcme for my archlinux+sway setup

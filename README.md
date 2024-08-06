@@ -1,3 +1,5 @@
+The init.lua config requires a ~/.config/nvim/lua/local.lua file, even if empty.
+
 ## Plugins to try
 
 - <https://github.com/preservim/nerdtree>
