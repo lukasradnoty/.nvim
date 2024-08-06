@@ -11,12 +11,6 @@
 	path = home/.local/share/nvim/site/pack/neoclide/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
 	branch = release
-[submodule "vendor/indentline"]
-	path = vendor/indentline
-	url = https://github.com/Yggdroot/indentLine
-[submodule "vendor/indent-blankline"]
-	path = vendor/indent-blankline
-	url = https://github.com/lukas-reineke/indent-blankline.nvim
 [submodule "vendor/endwise"]
 	path = home/.local/share/nvim/site/pack/tpope/opt/vim-endwise
 	url = https://github.com/tpope/vim-endwise
