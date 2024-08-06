@@ -2,40 +2,6 @@ require 'plugins'
 require 'local' -- Local settings specific to this host/system/wm/machine. In my case tracked in a separate homeshick repo - .macos, .sway, etc.
 require 'statusline'
 
--- Onedark colorschcme for my archlinux+sway setup
-if vim.fn.hostname() == "x260-archlinux" then 
-    -- If you don't set this to dark and onedark style is of the dark group of colors,
-    -- it will default to light.
-    vim.opt.background = 'light'
-    require('onedark').setup {
-        style = 'light', -- 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
-
-        transparent = true,
-        term_colors = true,
-        ending_tildes = true,
-
-        toggle_style_key = '<leader>ts',
-        toggle_style_list = { 'light', 'dark', 'darker',  'warm', 'warmer', 'cool', 'deep' },
-    }
-    require('onedark').load()
-    vim.cmd[[colorscheme onedark]] -- not needed with this plugin
-end 
-
-
--- vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "ExtraGroup" })
-
--- vim.cmd[[colorscheme default]]
--- vim.cmd[[colorscheme flexoki-dark]]
--- vim.opt.termguicolors = true -- not compatible with pywal! 
--- vim.opt.termguicolors = false -- its either true by default or somethings sets it to true
-
--- Config bellow this doesn't apply to VSCode
--- if vim.g.vscode then
---     do
---         return
---     end
--- end
-
 -- Line numbers
     vim.opt.number = true
     -- Relative numbers for lines other than the current line
